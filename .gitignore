@@ -1,0 +1,14 @@
+
+data/
+results/
+__pycache__/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.log
+.ipynb_checkpoints/
+env/
+venv/
+*.pickle
+*.pkl
