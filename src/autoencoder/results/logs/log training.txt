@@ -1,0 +1,249 @@
+(.venv) PS C:\Users\beast\Documents\Kuliah\Computer Vision\UASComVis\UAS-Comvis-main> .\train.ps1
+Starting Autoencoder Training...
+Project: C:\Users\beast\Documents\Kuliah\Computer Vision\UASComVis\UAS-Comvis-main\UAS-Comvis-main
+
+============================================================
+AUTOENCODER SUPER-RESOLUTION - TRAINING
+============================================================
+
+Device: cuda
+GPU: NVIDIA GeForce GTX 1650
+CUDA Version: 11.8
+PyTorch: 2.7.1+cu118
+cuDNN enabled: True, benchmark: True
+GPU Memory: 4.0 GB
+Batch Size: 4, Patch: 48
+
+Loading dataset...
+Total samples: 10000 | Train: 9800 | Val: 200
+[TRAIN] Loaded 9800 image pairs
+[VAL] Loaded 200 image pairs
+Creating model...
+  Parameters: 3,726,083 (14.9MB)
+
+Training: 50 epochs, batch_size=4
+
+Epoch [1/50]
+  Train Loss: 0.137514                                                                                                                                                            
+  Val Loss:   0.105085
+  ✓ Best model saved
+
+Epoch [2/50]
+  Train Loss: 0.087002
+  (Skipped validation)
+
+Epoch [3/50]
+  Train Loss: 0.078159
+  (Skipped validation)
+
+Epoch [4/50]
+  Train Loss: 0.073469
+  (Skipped validation)
+
+Epoch [5/50]
+  Train Loss: 0.071134
+  Val Loss:   0.076663                                                                                                                                                            
+  ✓ Best model saved
+
+Epoch [6/50]
+  Train Loss: 0.067367                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [7/50]
+  Train Loss: 0.064129                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [8/50]
+  Train Loss: 0.059991                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [9/50]
+  Train Loss: 0.059119                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [10/50]
+  Train Loss: 0.058322                                                                                                                                                            
+  Val Loss:   0.065659                                                                                                                                                            
+  ✓ Best model saved
+
+Epoch [11/50]
+  Train Loss: 0.056797
+  (Skipped validation)
+
+Epoch [12/50]
+  Train Loss: 0.057257                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [13/50]
+  Train Loss: 0.056377                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [14/50]
+  Train Loss: 0.056300                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [15/50]
+  Train Loss: 0.055922                                                                                                                                                            
+  Val Loss:   0.063957                                                                                                                                                            
+  ✓ Best model saved
+
+  ✓ Visualization saved
+
+Epoch [16/50]
+  Train Loss: 0.055263                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [17/50]
+  Train Loss: 0.054808                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [18/50]
+  Train Loss: 0.055496                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [19/50]
+  Train Loss: 0.055597                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [20/50]
+  Train Loss: 0.055268                                                                                                                                                            
+  Val Loss:   0.062591                                                                                                                                                            
+  ✓ Best model saved
+
+Epoch [21/50]
+  Train Loss: 0.054267                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [22/50]
+  Train Loss: 0.054426                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [23/50]
+  Train Loss: 0.054472                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [24/50]
+  Train Loss: 0.054512                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [25/50]
+  Train Loss: 0.054379                                                                                                                                                            
+  Val Loss:   0.061787                                                                                                                                                            
+  ✓ Best model saved
+
+Epoch [26/50]
+  Train Loss: 0.054420                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [27/50]
+  Train Loss: 0.053914                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [28/50]
+  Train Loss: 0.054230                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [29/50]
+  Train Loss: 0.054246                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [30/50]
+  Train Loss: 0.054343                                                                                                                                                            
+  Val Loss:   0.061849                                                                                                                                                            
+  ✓ Visualization saved
+
+Epoch [31/50]
+  Train Loss: 0.054202                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [32/50]
+  Train Loss: 0.054204                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [33/50]
+  Train Loss: 0.054157                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [34/50]
+  Train Loss: 0.054417                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [35/50]
+  Train Loss: 0.054291                                                                                                                                                            
+  Val Loss:   0.061729                                                                                                                                                            
+  ✓ Best model saved
+
+Epoch [36/50]
+  Train Loss: 0.054011                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [37/50]
+  Train Loss: 0.054257                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [38/50]
+  Train Loss: 0.054115                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [39/50]
+  Train Loss: 0.053981                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [40/50]
+  Train Loss: 0.053869                                                                                                                                                            
+  Val Loss:   0.061664                                                                                                                                                            
+  ✓ Best model saved
+
+Epoch [41/50]
+  Train Loss: 0.054087                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [42/50]
+  Train Loss: 0.054197                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [43/50]
+  Train Loss: 0.054244                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [44/50]
+  Train Loss: 0.053866                                                                                                                                                            
+  (Skipped validation)
+
+Epoch [45/50]
+  Train Loss: 0.054082                                                                                                                                                            
+  Val Loss:   0.061726                                                                                                                                                            
+  ✓ Visualization saved
+
+Epoch [46/50]
+  Train Loss: 0.053974                                                                                                                                                            
+  Val Loss:   0.061726
+  ✓ Visualization saved
+
+Epoch [46/50]
+  Train Loss: 0.053974
+  (Skipped validation)
+
+Epoch [47/50]
+  Train Loss: 0.054283
+  (Skipped validation)
+
+Epoch [48/50]
+  Train Loss: 0.053857
+  (Skipped validation)
+
+Epoch [49/50]
+  Train Loss: 0.054379
+  (Skipped validation)
+
+Epoch [50/50]
+  Train Loss: 0.054496
+  Val Loss:   0.061679
+  ✓ Visualization saved
+
+============================================================
+TRAINING COMPLETE
+============================================================
+
+Best Val Loss: 0.061664 (Epoch 40)
+Model: results/checkpoints\best_model.pth

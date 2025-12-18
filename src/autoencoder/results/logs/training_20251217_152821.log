@@ -1,0 +1,16 @@
+============================================================
+TRAINING SUMMARY
+============================================================
+
+Configuration:
+  Epochs: 15
+  Batch Size: 4
+  Patch Size: 48 (HR: 192)
+  Model Parameters: 3,726,083
+
+Results:
+  Best Validation Loss: 0.063303
+  Best Epoch: 15
+  Model Path: results/checkpoints\best_model.pth
+
+============================================================
