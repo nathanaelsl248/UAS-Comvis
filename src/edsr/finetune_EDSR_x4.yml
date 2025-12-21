@@ -1,0 +1,69 @@
+name: finetune_EDSR_x4
+model_type: SRModel
+scale: 4
+num_gpu: auto
+manual_seed: 0
+
+datasets:
+  train:
+    name: train
+    type: PairedImageDataset
+    dataroot_gt: ../train/HR
+    dataroot_lq: ../train/LR
+    io_backend:
+      type: disk
+
+    gt_size: 128
+    batch_size_per_gpu: 8
+    num_worker_per_gpu: 4
+    dataset_enlarge_ratio: 1
+    use_hflip: true
+    use_rot: false
+
+  val:
+    name: val
+    type: PairedImageDataset
+    dataroot_gt: ../val/HR
+    dataroot_lq: ../val/LR
+    io_backend:
+      type: disk
+
+network_g:
+  type: EDSR
+  num_in_ch: 3
+  num_out_ch: 3
+  num_feat: 128
+  num_block: 16
+  res_scale: 1
+
+path:
+  pretrain_network_g: weights/EDSR_x4.pth
+  param_key_g: ~
+  strict_load_g: false
+
+train:
+  optim_g:
+    type: Adam
+    lr: !!float 1e-4
+    betas: [0.9, 0.999]
+
+  scheduler:
+    type: MultiStepLR
+    milestones: [15000]
+    gamma: 0.5
+
+  total_iter: 20000
+  warmup_iter: -1
+
+  pixel_opt:
+    type: L1Loss
+    loss_weight: 1.0
+
+val:
+  val_freq: 5000
+  save_img: true
+
+logger:
+  print_freq: 100
+  save_checkpoint_freq: 5000
+  use_tb_logger: true
