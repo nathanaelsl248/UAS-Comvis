@@ -1,0 +1,1 @@
+# seharusnya datasetnya ada 2000 masing masing LR dan HR
